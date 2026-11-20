@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>問2 応用</title>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #menu {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      width: 80px;
+      height: 80px;
+      font-size: 28px;
+      background-color: skyblue;
+      border: 2px solid black;
+      cursor: pointer;
+    }
+
+    .page {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+    }
+
+    #page1 { background-color: #f0f8ff; }
+    #page2 { background-color: #fff0f5; }
+    #page3 { background-color: #f0fff0; }
+    #page4 { background-color: #fffacd; }
+    #page5 { background-color: #f5f0ff; }
+  </style>
+</head>
+<body>
+
+  <div id="menu">
+    <button id="btn1" class="btn">①</button>
+    <button id="btn2" class="btn">②</button>
+    <button id="btn3" class="btn">③</button>
+    <button id="btn4" class="btn">④</button>
+    <button id="btn5" class="btn">⑤</button>
+  </div>
+
+  <div id="page1" class="page">ページ 1</div>
+  <div id="page2" class="page">ページ 2</div>
+  <div id="page3" class="page">ページ 3</div>
+  <div id="page4" class="page">ページ 4</div>
+  <div id="page5" class="page">ページ 5</div>
+
+</body>
+</html>
